@@ -7,8 +7,8 @@ import Sponsor from "./pages/landing/components/sponsor";
 import Volunteer from "./pages/landing/components/volunteer";
 import Membership from "./pages/landing/components/member";
 import Events from "./pages/landing/components/events";
-import About from "./pages/landing/components/about";
 import LandingPage from "./pages";
+import About from "./pages/aboutPage/about";
 
 function App() {
   const router = createBrowserRouter([

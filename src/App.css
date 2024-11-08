@@ -1,0 +1,30 @@
+.slide-hover {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .slide-hover::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 200%;
+    height: 500%;
+    background-color: #3F9510;
+    transform: translateX(-100%) rotate(-90deg);
+    transition: transform 1s ease;
+    z-index: 0;
+  }
+  
+  .slide-hover:hover::before {
+    transform: translateX(0) rotate(0);
+  }
+  
+  .slide-hover-content {
+    position: relative;
+    z-index: 10;
+  }
+  .slide-hover:hover .icon-bg-hover {
+    background-color: #ffffff; /* Change to white on hover */
+  }
+  
+  

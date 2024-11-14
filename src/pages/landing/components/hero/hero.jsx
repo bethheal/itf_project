@@ -22,7 +22,7 @@ const Hero = () => {
         src={hero}
         alt="hero Image"
         className="absolute inset-0 w-full h-full  my-60 object-cover opacity-20 sm:relative sm:w-[20%] md:w-[70%] lg:w-[50%] sm:opacity-100 mt-5 lg:mt-0"
-        />
+      />
     </div>
   );
 };

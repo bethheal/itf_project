@@ -1,4 +1,5 @@
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
+import { HashRouter as Router } from "react-router-dom";
 
 import "./App.css";
 import RootLayout from "./layouts/rootLayout";

@@ -1,4 +1,3 @@
-import { HiComputerDesktop } from "react-icons/hi2";
 import { IoSettingsOutline } from "react-icons/io5";
 import {
   executiveDirector,

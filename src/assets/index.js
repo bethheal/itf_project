@@ -8,9 +8,13 @@ import generalSec from "./images/generalSec.jpg"
 import executiveMember from "./images/executiveMember.jpg"
 import executiveMemberGirl from "./images/executiveMemberGirl.jpg"
 import executivebg from "./images/executivebg.jpg"
+import aboutPageHead from "./images/aboutPage_head.jpg"
 
 
 
 
 
-export {logo, hero, about1,about2,executiveDirector,executiveDirectorGirl,executiveMember,executiveMemberGirl,generalSec,executivebg}
+export {logo, 
+    hero,
+     about1,about2,executiveDirector,executiveDirectorGirl,executiveMember, aboutPageHead,
+     executiveMemberGirl,generalSec,executivebg}

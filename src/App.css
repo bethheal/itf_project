@@ -26,7 +26,17 @@
   .slide-hover:hover .icon-bg-hover {
     background-color: #ffffff; /* Change to white on hover */
   }
-  
+
+  /* Landing Page */
+
+    /* .landing-bgimg {
+    background-image: url(./assets/images/logoNoBg.png);
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+    width: 100vw;
+    height: 60vh;
+    position: relative; } */
   /* Executive Section  */
   .bg-img {
     background-image: url(./assets/images/executivebg.jpg);
@@ -59,6 +69,11 @@ body {
   position: relative;
   height: 100%;
 }
+
+html {
+  scroll-behavior: smooth;
+}
+
 
 body {
   background: #eee;
@@ -108,3 +123,9 @@ body {
   background: #007aff;
 }
   
+.CountUp {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}

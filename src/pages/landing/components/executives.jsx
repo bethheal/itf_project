@@ -2,8 +2,11 @@ import React from "react";
 import k from "../../../constants";
 // import { executivebg } from "../../../assets";
 import "../../../App.css";
+import { useNavigate } from "react-router-dom";
+
 
 const Executives = () => {
+  const navigate = useNavigate();
   return (
     <div className="bg-[#caf4f8] flex flex-col">
       <div className="font-semibold flex flex-col justify-center mx-4 sm:mx-10 md:mx-[15rem] my-10">
@@ -44,7 +47,9 @@ const Executives = () => {
             <p className="text-white font-extrabold text-2xl sm:text-3xl my-4">
               LET'S CHANGE THE WORLD
             </p>
-            <button className="relative h-[50px] w-80 sm:w-96 overflow-hidden border border-[#caf4f8] bg-white px-3 font-bold shadow-2xl transition-all before:absolute before:bottom-0 before:left-0 before:top-0 before:z-0 before:h-full before:w-0 before:bg-[#3d960b] before:transition-all before:duration-500 hover:text-white hover:shadow-[#3d960b] hover:before:left-0 hover:before:w-full">
+            <button 
+            onClick={()=>navigate("/volunteer")}
+            className="relative h-[50px] w-80 sm:w-96 overflow-hidden border border-[#caf4f8] bg-white px-3 font-bold shadow-2xl transition-all before:absolute before:bottom-0 before:left-0 before:top-0 before:z-0 before:h-full before:w-0 before:bg-[#3d960b] before:transition-all before:duration-500 hover:text-white hover:shadow-[#3d960b] hover:before:left-0 hover:before:w-full">
               <span className="relative z-10">BECOME A VOLUNTEER</span>
             </button>
           </div>

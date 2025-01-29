@@ -6,7 +6,7 @@ import Testimonies from "./landing/components/testimoniesSection/testimonies";
 
 const LandingPage = () => {
   return (
-    <div>
+    <div >
       <Hero />
       <AboutUs/>
       <Executives/>

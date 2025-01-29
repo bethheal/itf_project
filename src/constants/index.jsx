@@ -24,17 +24,35 @@ const k = {
       path: "/events",
     },
     {
-      navName: "Member",
-      path: "/membership",
+      navName: "Get Involved",
+      path: "/getInvolved",
+      // dropdown:[
+      //   {
+      //     navName:"Member",
+      //     path:"/get-involved#membership"
+      //   },
+      //   {
+      //     navName:"Volunteer",
+      //     path:"/get-involved#volunteer"
+      //   },
+      //   {
+      //     navName:"Sponsor",
+      //     path:"/get-involved#sponsor"
+      //   },
+      // ],
     },
-    {
-      navName: "Volunteer",
-      path: "/volunteer",
-    },
-    {
-      navName: "Sponsor",
-      path: "/sponsorship",
-    },
+    // {
+    //   navName: "Member",
+    //   path: "/membership",
+    // },
+    // {
+    //   navName: "Volunteer",
+    //   path: "/volunteer",
+    // },
+    // {
+    //   navName: "Sponsor",
+    //   path: "/sponsorship",
+    // },
 
     {
       navName: "Contact",
@@ -96,7 +114,6 @@ const k = {
       position: "Executive Member",
       linkedin: <LiaLinkedin />,
       twitter: <FaTwitter />,
-      
     },
     {
       image: <img src={executiveMemberGirl} alt="Doris" />,

@@ -1,12 +1,13 @@
 import k from "../../../constants";
-// import "../../App.css"; // Import the CSS file
 import { about1, about2 } from "../../../assets";
-import "../../../App.css"
+import "../../../App.css";
+import { useNavigate } from "react-router-dom";
 
 const AboutUs = () => {
+  const navigate = useNavigate();
   return (
     <div>
-      <div className="flex flex-col justify-center text-center my-8 h-auto w-full bg-[#A5F3FC]">
+      <div className="bg-white flex flex-col justify-center text-center my-8 h-auto w-full ">
         <div className="m-8 font-semibold">
           <h3 className="text-[#3F9510] text-xl">What we do</h3>
           <h1 className="text-3xl md:text-5xl m-3">
@@ -37,7 +38,7 @@ const AboutUs = () => {
         </div>
       </div>
       <div className="flex flex-col md:flex-row justify-evenly my-16 md:my-96 mx-4 md:mx-0">
-        <div className="bg-white flex flex-col w-full md:w-1/2 mx-4 md:mx-40 mb-4 md:mb-0">
+        <div className=" flex flex-col w-full md:w-1/2 mx-4 md:mx-40 mb-4 md:mb-0">
           <p className="text-[#3F9510] text-xl py-10">About the Foundation</p>
           <span className="text-3xl md:text-5xl py-5">
             We Are In A Mission To Help the Youth
@@ -53,15 +54,26 @@ const AboutUs = () => {
           </span>
 
           <span className="mt-5">
-            <button className="relative h-[50px] w-40 overflow-hidden border border-[#3d960b] bg-white text-[#3d960b] shadow-2xl transition-all before:absolute before:left-0 before:top-0 before:h-full before:w-0 before:duration-500 after:absolute after:right-0 after:top-0 after:h-full after:w-0 after:duration-500 hover:text-white hover:shadow-[#3d960b] hover:before:w-2/4 hover:before:bg-[#3d960b] hover:after:w-2/4 hover:after:bg-[#3d960b]">
+            <button
+              onClick={() => navigate("/aboutUs")}
+              className="relative h-[50px] w-40 overflow-hidden border border-[#3d960b] bg-white text-[#3d960b] shadow-2xl transition-all before:absolute before:left-0 before:top-0 before:h-full before:w-0 before:duration-500 after:absolute after:right-0 after:top-0 after:h-full after:w-0 after:duration-500 hover:text-white hover:shadow-[#3d960b] hover:before:w-2/4 hover:before:bg-[#3d960b] hover:after:w-2/4 hover:after:bg-[#3d960b]"
+            >
               <span className="relative z-10">LEARN MORE</span>
             </button>
           </span>
         </div>
         <div className="w-full md:w-1/2 flex flex-col items-center">
-          <img src={about1} alt="About Image 1" className="w-1/2 mb-4 md:mb-0" />
+          <img
+            src={about1}
+            alt="About Image 1"
+            className="w-1/2 mb-4 md:mb-0"
+          />
           {/* Render about2 only on medium screens and larger */}
-          <img src={about2} alt="About Image 2" className="hidden md:block w-1/2" />
+          <img
+            src={about2}
+            alt="About Image 2"
+            className="hidden md:block w-1/2"
+          />
         </div>
       </div>
     </div>

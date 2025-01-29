@@ -4,12 +4,10 @@ import { HashRouter as Router } from "react-router-dom";
 import "./App.css";
 import RootLayout from "./layouts/rootLayout";
 import Contact from "./pages/landing/components/contact";
-import Sponsor from "./pages/landing/components/sponsor";
-import Volunteer from "./pages/landing/components/volunteer";
-import Membership from "./pages/landing/components/member";
 import Events from "./pages/landing/components/events";
 import LandingPage from "./pages";
 import About from "./pages/aboutPage/about";
+import GetInvolved from "./pages/getInvolvedPage/getInvolved";
 
 function App() {
   const router = createBrowserRouter([
@@ -29,23 +27,29 @@ function App() {
           path: "events",
           element: <Events />,
         },
+      
         {
-          path: "membership",
-          element: <Membership />,
-        },
-        {
-          path: "volunteer",
-          element: <Volunteer />,
-        },
-
-        {
-          path: "sponsorship",
-          element: <Sponsor />,
+          path: "getInvolved",
+          element: <GetInvolved />, 
         },
         {
           path: "contact",
           element: <Contact />,
         },
+
+          // {
+        //   path: "membership",
+        //   element: <Membership />,
+        // },
+        // {
+        //   path: "volunteer",
+        //   element: <Volunteer />,
+        // },
+    
+        // {
+        //   path: "sponsorship",
+        //   element: <Sponsor />,
+        // },
       ],
     },
   ]);

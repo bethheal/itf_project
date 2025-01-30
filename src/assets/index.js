@@ -9,6 +9,9 @@ import executiveMember from "./images/executiveMember.jpg"
 import executiveMemberGirl from "./images/executiveMemberGirl.jpg"
 import executivebg from "./images/executivebg.jpg"
 import aboutPageHead from "./images/aboutPage_head.jpg"
+import memberImage from "./images/memberImage.jpg"
+import patnerImage from "./images/patnershipImg.jpg"
+import volunteerImage from "./images/volunteer.jpg"
 
 
 
@@ -17,4 +20,6 @@ import aboutPageHead from "./images/aboutPage_head.jpg"
 export {logo, 
     hero,
      about1,about2,executiveDirector,executiveDirectorGirl,executiveMember, aboutPageHead,
-     executiveMemberGirl,generalSec,executivebg}
+     executiveMemberGirl,generalSec,executivebg,
+     memberImage,patnerImage,volunteerImage,
+    }

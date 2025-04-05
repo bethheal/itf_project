@@ -1,35 +1,35 @@
 .slide-hover {
-    position: relative;
-    overflow: hidden;
-  }
-  
-  .slide-hover::before {
-    content: '';
-    position: absolute;
-    left: 0;
-    width: 200%;
-    height: 500%;
-    background-color: #3F9510;
-    transform: translateX(-100%) rotate(-90deg);
-    transition: transform 1s ease;
-    z-index: 0;
-  }
-  
-  .slide-hover:hover::before {
-    transform: translateX(0) rotate(0);
-  }
-  
-  .slide-hover-content {
-    position: relative;
-    z-index: 10;
-  }
-  .slide-hover:hover .icon-bg-hover {
-    background-color: #ffffff; /* Change to white on hover */
-  }
+  position: relative;
+  overflow: hidden;
+}
 
-  /* Landing Page */
+.slide-hover::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 200%;
+  height: 500%;
+  background-color: #3f9510;
+  transform: translateX(-100%) rotate(-90deg);
+  transition: transform 1s ease;
+  z-index: 0;
+}
 
-    /* .landing-bgimg {
+.slide-hover:hover::before {
+  transform: translateX(0) rotate(0);
+}
+
+.slide-hover-content {
+  position: relative;
+  z-index: 10;
+}
+.slide-hover:hover .icon-bg-hover {
+  background-color: #ffffff; /* Change to white on hover */
+}
+
+/* Landing Page */
+
+/* .landing-bgimg {
     background-image: url(./assets/images/logoNoBg.png);
     background-position: center center;
     background-attachment: fixed;
@@ -37,27 +37,27 @@
     width: 100vw;
     height: 60vh;
     position: relative; } */
-  /* Executive Section  */
-  .bg-img {
-    background-image: url(./assets/images/executivebg.jpg);
-    background-position: center center;
-    background-attachment: fixed;
-    background-size: cover;
-    width: 100vw;
-    height: 60vh;
-    position: relative; }
-    
-  
-  .bg-img::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(202,244,248, 0.7); 
-    pointer-events: none; /* Allows interactions with elements below the overlay */
-  }
+/* Executive Section  */
+.bg-img {
+  background-image: url(./assets/images/executivebg.jpg);
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
+  width: 100vw;
+  height: 60vh;
+  position: relative;
+}
+
+.bg-img::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(202, 244, 248, 0.7);
+  pointer-events: none; /* Allows interactions with elements below the overlay */
+}
 
 /* Testimonies Section  */
 
@@ -73,7 +73,6 @@ body {
 html {
   scroll-behavior: smooth;
 }
-
 
 body {
   font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
@@ -121,10 +120,66 @@ body {
   color: #fff;
   background: #007aff;
 }
-  
+
 .CountUp {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100%;
+}
+/* Events section */
+.events {
+  background-image: url("./assets/images/events-hero.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: 200vh;
+  position: relative;
+}
+
+.events::before {  
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; /* Covers the entire .events container */
+  background-color: black;
+  opacity: 0.8; /* Adjust as needed */
+  z-index: 3;
+}
+
+
+/* Events Image (flyer ) Swiper pagination style  */
+.swiper-pagination {
+  bottom: 0rem !important;
+  text-align: center;
+
+}
+.swiper-pagination-bullet {
+  background: #012909 !important; /* Tailwind blue-600 */
+  opacity: 1;
+  
+}
+.swiper-pagination-bullet-active {
+  background: #3C970D !important; /* Tailwind blue-800 */
+  transform: scale(1.2);
+}
+/* .mySwiper{
+  background-color: aqua;
+  height: 40rem;
+} */
+
+
+
+
+/* Events Hero Type Writer Style */
+@keyframes blink {
+  0%, 100% { border-color: transparent; }
+  50% { border-color: white; }
+}
+.wrap {
+  border-right: 2px solid white;
+  animation: blink 1s step-end infinite;
 }

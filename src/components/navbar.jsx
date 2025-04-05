@@ -10,7 +10,7 @@ const Navbar = () => {
   const navigate = useNavigate();
 
   return (
-    <div className="flex drop-shadow-lg items-center justify-between bg-white px-4 sm:px-8 md:px-16 lg:px-28 py-4 fixed w-full top-0 z-50">
+    <div className="flex drop-shadow-lg items-center justify-between bg-[#3C970D] px-4 sm:px-8 md:px-16 lg:px-28 py-4 fixed w-full top-0 z-50">
       {/* Logo */}
       <span className="w-10 sm:w-12 md:w-16 lg:w-10">
         <img 

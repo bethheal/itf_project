@@ -12,7 +12,10 @@ import aboutPageHead from "./images/aboutPage_head.jpg"
 import memberImage from "./images/memberImage.jpg"
 import patnerImage from "./images/patnershipImg.jpg"
 import volunteerImage from "./images/volunteer.jpg"
-
+import eventsIcon from "./icons/event-icon.png"
+import eventsBg from "./images/events-bg.jpg"
+import eventHeroImg from "./images/events-hero.jpg"
+import flyerImgs from "./images/flyers.jpg"
 
 
 
@@ -21,5 +24,6 @@ export {logo,
     hero,
      about1,about2,executiveDirector,executiveDirectorGirl,executiveMember, aboutPageHead,
      executiveMemberGirl,generalSec,executivebg,
-     memberImage,patnerImage,volunteerImage,
+     memberImage,patnerImage,volunteerImage,eventsIcon,eventsBg, 
+     eventHeroImg,flyerImgs,
     }

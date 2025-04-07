@@ -4,14 +4,15 @@ import { FreeMode, Autoplay } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/free-mode';
 
+// Import logos statically
+import logo1 from '../../assets/images/sponsorLogo.png';
+import logo2 from '../../assets/images/sponsorLogo.png';
+import logo3 from '../../assets/images/sponsorLogo.png';
+import logo4 from '../../assets/images/sponsorLogo.png';
+
+
 const SponsorSwiper = () => {
-  const logos = [
-    '/path/to/logo1.png',
-    '/path/to/logo2.png',
-    '/path/to/logo3.png',
-    '/path/to/logo4.png',
-    // Add more logos as needed
-  ];
+  const logos = [logo1, logo2, logo3, logo4];
 
   return (
     <div className="trusted-by-list">
@@ -25,7 +26,7 @@ const SponsorSwiper = () => {
         loop={true}
         slidesPerView="auto"
         autoplay={{
-          delay: 0.5,
+          delay: 1,
           disableOnInteraction: false,
         }}
         breakpoints={{
@@ -41,7 +42,7 @@ const SponsorSwiper = () => {
             key={index}
             className="!w-auto flex items-center justify-center"
           >
-            <img src={logo} alt={`Logo ${index + 1}`} className="h-12" />
+            <img src={logo} alt={`Logo ${index + 1}`}   className="h-6 w-6 object-contain !important" />
           </SwiperSlide>
         ))}
       </Swiper>

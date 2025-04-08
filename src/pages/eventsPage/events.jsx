@@ -3,6 +3,7 @@ import { eventsIcon, eventHeroImg } from "../../assets";
 import SwiperComponent from "./swiper";
 import Typewriter from "./typeWriter";
 import SponsorSwiper from "./swiperSponsors";
+import YoutubeChannel from "./youtubechannel";
 
 const Events = () => {
   return (
@@ -85,14 +86,18 @@ const Events = () => {
         <SwiperComponent />
       </div>
 
-      <div>
-        <h2>Meet Our Sponsors </h2>
-        <p>
-          Discover the global sponsors, Discover the global sponsors, Discover the
+      <div className="p-12 mt-16 bg-[#DCDCDC]">
+
+        <h2 className="text-3xl pb-10 font-semibold text-[#F219F2]">Meet Our Sponsors </h2>
+        <p className="text-lg">
+          Discover the global sponsors, 
+          Discover the global sponsors,<br/> Discover the
           global sponsors, Discover the global sponors
         </p>
         <SponsorSwiper/>
       </div>
+
+      <YoutubeChannel/>
     </div>
   );
 };

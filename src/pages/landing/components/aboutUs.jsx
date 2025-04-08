@@ -37,7 +37,7 @@ const AboutUs = () => {
           ))}
         </div>
       </div>
-      <div className="flex flex-col md:flex-row justify-evenly my-16 md:my-96 mx-4 md:mx-0">
+      <div className="flex flex-col md:flex-row justify-evenly my-44 md:my-20 mx-4 md:mx-0">
         <div className=" flex flex-col w-full md:w-1/2 mx-4 md:mx-40 mb-4 md:mb-0">
           <p className="text-[#3F9510] text-xl py-10">About the Foundation</p>
           <span className="text-3xl md:text-5xl py-5">

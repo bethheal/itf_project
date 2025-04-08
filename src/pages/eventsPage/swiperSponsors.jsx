@@ -42,7 +42,7 @@ const SponsorSwiper = () => {
             key={index}
             className="!w-auto flex items-center justify-center"
           >
-            <img src={logo} alt={`Logo ${index + 1}`}   className="h-6 w-6 object-contain !important" />
+            <img src={logo} alt={`Logo ${index + 1}`}   className="h-6 w-6 object-contain bg-[#DCDCDC] !important" />
           </SwiperSlide>
         ))}
       </Swiper>

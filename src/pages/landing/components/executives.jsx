@@ -8,13 +8,13 @@ import { useNavigate } from "react-router-dom";
 const Executives = () => {
   const navigate = useNavigate();
   return (
-    <div className="bg-[#caf4f8] flex flex-col">
+    <div className=" flex flex-col">
       <div className="font-semibold flex flex-col justify-center mx-4 sm:mx-10 md:mx-[15rem] my-10">
         <p className="text-[#3F9510] text-xl sm:text-2xl md:text-xl mx-4 sm:mx-40">Our Executives</p>
         <p className="text-3xl md:text-5xl my-10 mx-4 sm:mx-20">Our Expert Executives</p>
       </div>
 
-      <div className="flex flex-col sm:flex-row sm:flex-wrap justify-center mx-4 sm:mx-10 my-20">
+      <div className="flex bg-[#caf4f8] flex-col sm:flex-row sm:flex-wrap justify-center mx-4 sm:mx-10 my-20">
         {k.EXECUTIVES.map((item, index) => (
           <div
             key={index}
@@ -41,10 +41,10 @@ const Executives = () => {
         ))}
       </div>
 
-      <div className="relative my-20 h-[40%] w-full">
-        <div className="absolute top-8 left-8 sm:left-28 w-full sm:w-[160vh] h-[50vh] bg-[#3f9510] opacity-70 z-10">
-          <div className="flex flex-col sm:flex-row sm:m-40 justify-between text-center sm:text-left">
-            <p className="text-white font-extrabold text-2xl sm:text-3xl my-4">
+      <div className="relative h-[40rem] w-full">
+        <div className="absolute  left-8 sm:left-28 w-full sm:w-[85vw] h-[50vh] bg-[#3f9510] opacity-50 z-10">
+          <div className="flex flex-col sm:flex-row sm:m-40 justify-between text-justify sm:text-left">
+            <p className="text-white font-extrabold text-2xl sm:text-3xl m-4">
               LET'S CHANGE THE WORLD
             </p>
             <button 

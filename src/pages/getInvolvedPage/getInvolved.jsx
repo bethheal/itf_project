@@ -7,7 +7,8 @@ const sections = [
     id: "membership",
     title: "BE A MEMBER",
     image: memberImage,
-    description: "Submit your request to become a member",
+    description:
+      "Become part of a supportive family that is passionate about making a difference. As a member, you’ll enjoy opportunities to grow, contribute, and connect with others who share your vision. Join us in building a stronger, more impactful community.",
     buttonText: "Become a Member",
     link: "https://forms.gle/KskCjghZVSwpNZC58",
   },
@@ -15,17 +16,18 @@ const sections = [
     id: "volunteer",
     title: "BE A VOLUNTEER",
     image: volunteerImage,
-    description: "Submit your request to become a volunteer",
+    description:
+      "Join our circle of changemakers. As a volunteer, you play a vital role in driving our mission forward whether by sharing your time, talents, or heart for service. There's a place for everyone, and your effort can spark real transformation in the lives of others.",
     buttonText: "Become a Volunteer",
     reverse: true,
     link: "https://forms.gle/fSgkHX9P5g7NC8wU6",
-  
   },
   {
     id: "sponsor",
     title: "PARTNER WITH US",
     image: patnerImage,
-    description: "Support our mission and be a sponsor",
+    description:
+      "Support us through strategic partnerships that amplify impact. As a partner, you help us reach more people, expand our initiatives, and create lasting change. Let’s work together to achieve meaningful goals that matter.",
     buttonText: "Partner with Us",
     link: "https://paystack.com/pay/czjsp38823",
   },
@@ -33,7 +35,8 @@ const sections = [
     id: "donate",
     title: "DONATE TO US",
     image: patnerImage,
-    description: "Support our mission and donate",
+    description:
+      "Every donation big or small helps us take one more step toward creating real change. Your generosity fuels our projects, supports our teams, and brings hope to those who need it most. Give today and be a part of something powerful.",
     buttonText: "Donate",
     link: "https://paystack.com/pay/czjsp38823",
   },
@@ -74,11 +77,8 @@ const GetInvolved = () => {
               />
               <div className="p-6 md:w-1/2 text-center md:text-left">
                 <h2 className="font-bold text-2xl md:text-3xl">{title}</h2>
-                <p className="text-gray-500 my-4">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  Nulla dolor ex porro corporis fuga et, soluta fugit veritatis.
-                </p>
-                <p className="font-bold text-gray-500">{description}</p>
+                
+                <p className="text-gray-500 my-4">{description}</p>
                 <button
                   onClick={() => {
                     if (link.startsWith("http")) {

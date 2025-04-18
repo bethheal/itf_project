@@ -108,9 +108,8 @@ body {
 
 /* Sponsor Swiper */
 .trusted-by-swiper .swiper-slide img {
-  width: auto;
-  max-width: 30rem;  /* You can adjust this */
-  height: auto;
+  width: 30rem;
+  height: 10rem;
   max-height: 50rem;  /* Adjust based on your preference */
   object-fit: contain;  /* Makes sure the logos are contained without distortion */
 }

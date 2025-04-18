@@ -4,7 +4,6 @@ import { FreeMode, Autoplay } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/free-mode';
 
-// Import logos statically
 import logo1 from '../../assets/images/sponsorLogo.png';
 import logo2 from '../../assets/images/sponsorLogo.png';
 import logo3 from '../../assets/images/sponsorLogo.png';
@@ -16,9 +15,8 @@ import logo8 from '../../assets/images/sponsorLogo.png';
 import logo9 from '../../assets/images/sponsorLogo.png';
 import logo10 from '../../assets/images/sponsorLogo.png';
 
-
 const SponsorSwiper = () => {
-  const logos = [logo1, logo2, logo3, logo4,logo5,logo6,logo7,logo8,logo9,logo10,];
+  const logos = [logo1, logo2, logo3, logo4, logo5, logo6, logo7, logo8, logo9, logo10];
 
   return (
     <div className="trusted-by-list">
@@ -48,7 +46,11 @@ const SponsorSwiper = () => {
             key={index}
             className="w-auto flex items-center justify-center"
           >
-            <img src={logo} alt={`Logo ${index + 1}`}   className="h-6 w-6 object-contain bg-[#DCDCDC] !important" />
+            <img
+              src={logo}
+              alt={`Logo ${index + 1}`}
+              className="h-28 w-auto object-contain"
+            />
           </SwiperSlide>
         ))}
       </Swiper>

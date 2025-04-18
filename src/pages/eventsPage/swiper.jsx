@@ -45,10 +45,10 @@ const SwiperComponent = () => {
         Be part of something great — shape your future with us.
       </p>
       <div className="flex gap-4">
-        <button className="bg-[#3C970D] hover:bg-[#3C970D] px-4 py-2 rounded-md text-sm">
+        <button className="bg-[#2D6A4F] hover:bg-[#2D6A4F] px-4 py-2 rounded-md text-sm">
           Register Now
         </button>
-        <button className="bg-[#F219F2] hover:bg-[#F219F2] px-4 py-2 rounded-md text-sm">
+        <button className="bg-[#F2C14E] hover:bg-[#F2C14E] px-4 py-2 rounded-md text-sm">
           Get Involved
         </button>
       </div>

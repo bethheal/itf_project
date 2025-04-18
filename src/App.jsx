@@ -66,10 +66,10 @@ function App() {
           path: "getInvolved",
           element: <GetInvolved />,
         },
-        {
-          path: "contact",
-          element: <Contact />,
-        },
+        // {
+        //   path: "contact",
+        //   element: <Contact />,
+        // },
         // Add other routes here as needed
       ],
     },

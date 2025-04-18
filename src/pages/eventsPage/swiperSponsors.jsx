@@ -9,10 +9,16 @@ import logo1 from '../../assets/images/sponsorLogo.png';
 import logo2 from '../../assets/images/sponsorLogo.png';
 import logo3 from '../../assets/images/sponsorLogo.png';
 import logo4 from '../../assets/images/sponsorLogo.png';
+import logo5 from '../../assets/images/sponsorLogo.png';
+import logo6 from '../../assets/images/sponsorLogo.png';
+import logo7 from '../../assets/images/sponsorLogo.png';
+import logo8 from '../../assets/images/sponsorLogo.png';
+import logo9 from '../../assets/images/sponsorLogo.png';
+import logo10 from '../../assets/images/sponsorLogo.png';
 
 
 const SponsorSwiper = () => {
-  const logos = [logo1, logo2, logo3, logo4];
+  const logos = [logo1, logo2, logo3, logo4,logo5,logo6,logo7,logo8,logo9,logo10,];
 
   return (
     <div className="trusted-by-list">
@@ -40,7 +46,7 @@ const SponsorSwiper = () => {
         {logos.map((logo, index) => (
           <SwiperSlide
             key={index}
-            className="!w-auto flex items-center justify-center"
+            className="w-auto flex items-center justify-center"
           >
             <img src={logo} alt={`Logo ${index + 1}`}   className="h-6 w-6 object-contain bg-[#DCDCDC] !important" />
           </SwiperSlide>

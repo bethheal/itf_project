@@ -19,6 +19,8 @@ import flyerImgs from "./images/flyers.jpg"
 import sponsorsLogo from "./images/sponsorLogo.png"
 import testHeadshot from "./images/headshot.jpg"
 
+import profilePeter from "./images/profilePet.jpg"
+
 
 
 
@@ -27,5 +29,5 @@ export {logo,
      about1,about2,executiveDirector,executiveDirectorGirl,executiveMember, aboutPageHead,
      executiveMemberGirl,generalSec,executivebg,
      memberImage,patnerImage,volunteerImage,eventsIcon,eventsBg, 
-     eventHeroImg,flyerImgs,sponsorsLogo,testHeadshot
+     eventHeroImg,flyerImgs,sponsorsLogo,testHeadshot, profilePeter,
     }

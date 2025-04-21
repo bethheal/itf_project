@@ -126,12 +126,14 @@ const AboutUs = () => {
         >
           <motion.img
             src={about1}
+            loading ="lazy"
             alt="About Image 1"
             className="w-1/2 mb-4 md:mb-0"
             whileHover={{ scale: 1.05 }}
           />
           <motion.img
             src={about2}
+            loading ="lazy"
             alt="About Image 2"
             className="hidden md:block w-1/2"
             whileHover={{ scale: 1.05 }}

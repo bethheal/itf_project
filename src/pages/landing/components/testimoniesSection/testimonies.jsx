@@ -45,6 +45,8 @@ const Testimonies = () => {
             <div className="flex flex-col items-center text-center px-4">
               <img
                 src={testHeadshot}
+                loading ="lazy"
+
                 alt="headshot"
                 className="w-8 h-8 rounded-full object-cover mb-6 border-4 border-[#caf4f8]"
               />

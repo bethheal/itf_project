@@ -56,6 +56,7 @@ const Executives = () => {
             <div className="relative w-full h-60 overflow-hidden">
               <motion.img
                 src={item.image.props.src}
+                loading ="lazy"
                 alt={item.image.props.alt}
                 className="w-full h-full object-cover object-top transition-transform duration-300 group-hover:scale-105"
               />

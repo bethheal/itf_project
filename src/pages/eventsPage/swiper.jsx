@@ -37,6 +37,8 @@ const SwiperComponent = () => {
 <div className="relative w-[300px] sm:w-[350px] md:w-[400px] h-[400px] mt-10 group rounded-lg overflow-hidden">
 <img
       src={flyerImage}
+      loading ="lazy"
+
       alt={`Flyer ${index + 1}`}
       className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
     />

@@ -15,6 +15,8 @@ const Hero = () => {
           backgroundImage: `url(${eventHeroImg})`,
           zIndex: -1,
         }}
+        loading ="lazy"
+
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 1 }}
@@ -71,6 +73,8 @@ const Hero = () => {
 
         <motion.img
           src={hero}
+          loading ="lazy"
+
           alt="hero Image"
           className="absolute inset-0 w-full h-full my-60 object-cover opacity-20 sm:relative sm:w-[20%] md:w-[70%] lg:w-[50%] sm:opacity-100 mt-5 lg:mt-0"
           initial={{ scale: 0.8, opacity: 0 }}

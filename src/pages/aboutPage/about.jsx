@@ -11,6 +11,7 @@ const About = () => {
       <motion.img
         src={aboutPageHead}
         alt="about image"
+        loading ="lazy"
         className="h-[50vh] w-full object-cover my-20"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}

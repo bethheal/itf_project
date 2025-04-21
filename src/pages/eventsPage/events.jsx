@@ -16,6 +16,7 @@ const Events = () => {
       <div className="relative">
         <img
           src={eventHeroImg}
+          loading ="lazy"
           alt="event hero"
           className="w-full h-[25rem] object-cover"
         />

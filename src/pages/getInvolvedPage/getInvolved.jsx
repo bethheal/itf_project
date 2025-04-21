@@ -73,6 +73,8 @@ const GetInvolved = () => {
               <img
                 className="h-60 md:h-80 w-full md:w-1/2 object-cover rounded-lg"
                 src={image}
+                loading ="lazy"
+
                 alt={title}
               />
               <div className="p-6 md:w-1/2 text-center md:text-left">

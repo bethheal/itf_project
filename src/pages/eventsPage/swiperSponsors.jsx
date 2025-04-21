@@ -48,6 +48,8 @@ const SponsorSwiper = () => {
           >
             <img
               src={logo}
+              loading ="lazy"
+
               alt={`Logo ${index + 1}`}
               className="h-28 w-auto object-contain"
             />
